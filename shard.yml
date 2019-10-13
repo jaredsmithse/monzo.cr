@@ -7,3 +7,10 @@ authors:
 crystal: 0.31.1
 
 license: MIT
+
+development_dependencies:
+  webmock:
+    github: manastech/webmock.cr
+    branch: master
+  habitat:
+    github: luckyframework/habitat
