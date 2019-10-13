@@ -1,6 +1,6 @@
 require "./spec_helper"
 
-describe Monzo.cr do
+describe Monzo do
   # TODO: Write tests
 
   it "works" do

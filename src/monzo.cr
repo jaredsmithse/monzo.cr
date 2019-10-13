@@ -1,5 +1,5 @@
 # TODO: Write documentation for `Monzo.cr`
-module Monzo.cr
+module Monzo
   VERSION = "0.1.0"
 
   # TODO: Put your code here
