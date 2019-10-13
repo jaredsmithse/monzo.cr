@@ -1,0 +1,18 @@
+endpoint: https://api.monzo.com/accounts
+response:
+  accounts:
+    - id: acc_00001msHGunDvoEwmVFXvd
+      closed: false
+      created: 2019-10-11T23:35:46.103Z
+      description: user_000011HUoGjmgChmnxxYh
+      type: us_partner
+      currency: USD
+      country_code: US
+      owners:
+        - user_id: user_000011HUoGjmgChmnxxYh
+          preferred_name: John Smith
+          preferred_first_name: John
+      payment_details:
+        locale_us:
+          account_number: "6822264896"
+          routing_number: "041215663"
