@@ -1,8 +1,6 @@
 module Monzo
   class Client
     Habitat.create do
-      setting user_id : String
-      setting account_id : String
       setting access_token : String
       setting base_url : String
     end
