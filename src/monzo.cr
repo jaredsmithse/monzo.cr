@@ -1,4 +1,15 @@
+require "http/client"
+require "json"
 require "habitat"
+
+require "./monzo/client"
+
+require "./monzo/api/accounts"
+
+require "./monzo/models/account"
+require "./monzo/models/owner"
+require "./monzo/models/payment_details"
+require "./monzo/models/locales/us"
 
 # TODO: Write documentation for `Monzo.cr`
 module Monzo
