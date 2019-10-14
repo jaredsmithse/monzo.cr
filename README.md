@@ -11,11 +11,11 @@ This is an API wrapper client for Monzo. It is still under construction and all 
 
 1. Add the dependency to your `shard.yml`:
 
-   ```yaml
-   dependencies:
-     monzo.cr:
-       github: jaredsmithse/monzo.cr
-   ```
+```yaml
+  dependencies:
+    monzo.cr:
+      github: jaredsmithse/monzo.cr
+```
 
 2. Run `shards install`
 
