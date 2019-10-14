@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jaredsmithse/monzo.cr.svg?branch=master)](https://travis-ci.org/jaredsmithse/monzo.cr)
 [![GitHub license](https://img.shields.io/github/license/c910335/mass-spec.svg)](https://github.com/c910335/mass-spec/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/release/jaredsmithse/monzo.svg)](https://github.com/jaredsmithse/monzo.cr/releases)
+[![GitHub release](https://img.shields.io/github/release/jaredsmithse/monzo.cr.svg)](https://github.com/jaredsmithse/monzo.cr/releases)
 
 The Monzo API is designed to be a predictable and intuitive interface for interacting with users’ accounts.
 This is an API wrapper client for Monzo. It is still under construction and all help is welcome!
