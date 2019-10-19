@@ -22,5 +22,9 @@ module Monzo
     def self.balance
       Monzo::API::Balance.new
     end
+
+    def self.whoami?
+      Monzo::API::Whoami.new.fetch
+    end
   end
 end

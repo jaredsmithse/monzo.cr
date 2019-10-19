@@ -1,0 +1,5 @@
+endpoint: https://api.monzo.com/ping/whoami
+response:
+  authenticated: true
+  client_id: oauthclient_000012oiYWNjdG9rXzAwMD
+  user_id: user_00001YiI6InpBejEvUjAzO
