@@ -1,5 +1,6 @@
 module Monzo
   module API
+    # Retrieve information about an account’s balance.
     class Balance
       delegate :host, :headers, to: Monzo::Client
 
@@ -7,6 +8,7 @@ module Monzo
         @base_url = "#{host}/balance"
       end
 
+      # Returns balance information for a specific account.
       def find(account_id)
         params = HTTP::Params.encode({ "account_id" => account_id })
         url = "#{@base_url}?#{params}"
