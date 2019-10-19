@@ -1,0 +1,10 @@
+endpoint: https://api.monzo.com/webhooks
+account_id: acc_00001msHGunDvoEwmVFXvd
+response:
+  webhooks:
+    - id: webhook_000091rqBlDIbNvlcZfV7a
+      account_id: acc_00001msHGunDvoEwmVFXvd
+      url: http://requestb.in/1412las1
+    - id: webhook_00009apxPxI2pA2PM96Z6y
+      account_id: acc_00001msHGunDvoEwmVFXvd
+      url: http://requestb.in/1387leq2

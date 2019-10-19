@@ -23,6 +23,10 @@ module Monzo
       Monzo::API::Balance.new
     end
 
+    def self.webhooks
+      Monzo::API::Webhooks.new
+    end
+
     def self.whoami?
       Monzo::API::Whoami.new.fetch
     end
