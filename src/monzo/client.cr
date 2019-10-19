@@ -18,5 +18,9 @@ module Monzo
     def self.accounts
       Monzo::API::Accounts.new
     end
+
+    def self.balance
+      Monzo::API::Balance.new
+    end
   end
 end

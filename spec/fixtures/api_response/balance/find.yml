@@ -1,0 +1,11 @@
+endpoint: https://api.monzo.com/balance
+account_id: acc_00001msHGunDvoEwmVFXvd
+response:
+  balance: 9414
+  total_balance: 9414
+  balance_including_flexible_savings: 9414
+  currency: USD
+  spend_today: 0
+  local_currency: ''
+  local_exchange_rate: 0
+  local_spend: []

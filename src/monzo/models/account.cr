@@ -13,4 +13,8 @@ class Account
   property country_code : String
   property owners : Array(Owner)
   property payment_details : PaymentDetails
+
+  def balance_details
+    Monzo::API::Balance.new.find(id)
+  end
 end
