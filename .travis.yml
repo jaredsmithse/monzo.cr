@@ -1,7 +1,16 @@
 language: crystal
+
+crystal:
+  - latest
+  - nightly
+
+cache: shards
+
 script:
   - crystal spec
+  - crystal tool format --check
   - crystal docs
+
 deploy:
   provider: pages
   skip_cleanup: true
