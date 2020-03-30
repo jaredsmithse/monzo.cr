@@ -6,8 +6,8 @@ module Monzo
     end
 
     def self.headers
-      @@headers ||= HTTP::Headers {
-        "Authorization" => "Bearer #{settings.access_token}"
+      @@headers ||= HTTP::Headers{
+        "Authorization" => "Bearer #{settings.access_token}",
       }
     end
 

@@ -11,7 +11,7 @@ module Monzo
 
       # List the webhooks your application has registered on an account.
       def list(account_id)
-        params = HTTP::Params.encode({ "account_id" => account_id })
+        params = HTTP::Params.encode({"account_id" => account_id})
         url = "#{@base_url}?#{params}"
         response = HTTP::Client.get(url, headers: headers)
 
@@ -24,7 +24,7 @@ module Monzo
       def register!(account_id, url)
         params = HTTP::Params.encode({
           account_id: account_id,
-          url: url,
+          url:        url,
         })
         response = HTTP::Client.post(@base_url, headers: headers, form: params)
 

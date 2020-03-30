@@ -10,7 +10,7 @@ module Monzo
 
       # Returns balance information for a specific account.
       def find(account_id)
-        params = HTTP::Params.encode({ "account_id" => account_id })
+        params = HTTP::Params.encode({"account_id" => account_id})
         url = "#{@base_url}?#{params}"
         response = HTTP::Client.get(url, headers: headers)
 

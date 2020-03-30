@@ -12,7 +12,7 @@ describe Monzo::API::Webhooks do
 
       WebMock
         .stub(:get, fixture["endpoint"].to_s)
-        .with(query: { "account_id" => account_id })
+        .with(query: {"account_id" => account_id})
         .to_return(body: fixture["response"].to_json)
 
       Monzo::Client
@@ -33,7 +33,7 @@ describe Monzo::API::Webhooks do
 
         params = HTTP::Params.encode({
           account_id: account_id,
-          url: url,
+          url:        url,
         })
 
         WebMock
