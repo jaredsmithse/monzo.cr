@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="crystal_docs.project_version" content="HEAD">
+<meta name="crystal_docs.project_name" content="monzo.cr">
+
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/doc.js"></script>
+
+  <meta name="repository-name" content="monzo.cr">
+  <title>Monzo::API::Webhooks - monzo.cr HEAD</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../index.html">
+          monzo.cr
+        </a>
+      </h1>
+
+      <span class="project-version">
+        HEAD
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="monzo.cr/Account" data-name="account">
+      <a href="../../Account.html">Account</a>
+      
+    </li>
+  
+  <li class=" " data-id="monzo.cr/Balance" data-name="balance">
+      <a href="../../Balance.html">Balance</a>
+      
+    </li>
+  
+  <li class="parent " data-id="monzo.cr/Locales" data-name="locales">
+      <a href="../../Locales.html">Locales</a>
+      
+        <ul>
+  
+  <li class=" " data-id="monzo.cr/Locales/US" data-name="locales::us">
+      <a href="../../Locales/US.html">US</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="monzo.cr/Monzo" data-name="monzo">
+      <a href="../../Monzo.html">Monzo</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="monzo.cr/Monzo/API" data-name="monzo::api">
+      <a href="../../Monzo/API.html">API</a>
+      
+        <ul>
+  
+  <li class=" " data-id="monzo.cr/Monzo/API/Accounts" data-name="monzo::api::accounts">
+      <a href="../../Monzo/API/Accounts.html">Accounts</a>
+      
+    </li>
+  
+  <li class=" " data-id="monzo.cr/Monzo/API/Balance" data-name="monzo::api::balance">
+      <a href="../../Monzo/API/Balance.html">Balance</a>
+      
+    </li>
+  
+  <li class=" current" data-id="monzo.cr/Monzo/API/Webhooks" data-name="monzo::api::webhooks">
+      <a href="../../Monzo/API/Webhooks.html">Webhooks</a>
+      
+    </li>
+  
+  <li class=" " data-id="monzo.cr/Monzo/API/Whoami" data-name="monzo::api::whoami">
+      <a href="../../Monzo/API/Whoami.html">Whoami</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="monzo.cr/Monzo/Client" data-name="monzo::client">
+      <a href="../../Monzo/Client.html">Client</a>
+      
+        <ul>
+  
+  <li class=" " data-id="monzo.cr/Monzo/Client/HabitatSettings" data-name="monzo::client::habitatsettings">
+      <a href="../../Monzo/Client/HabitatSettings.html">HabitatSettings</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="monzo.cr/Owner" data-name="owner">
+      <a href="../../Owner.html">Owner</a>
+      
+    </li>
+  
+  <li class=" " data-id="monzo.cr/PaymentDetails" data-name="paymentdetails">
+      <a href="../../PaymentDetails.html">PaymentDetails</a>
+      
+    </li>
+  
+  <li class=" " data-id="monzo.cr/Webhook" data-name="webhook">
+      <a href="../../Webhook.html">Webhook</a>
+      
+    </li>
+  
+  <li class=" " data-id="monzo.cr/Whoami" data-name="whoami">
+      <a href="../../Whoami.html">Whoami</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Monzo::API::Webhooks
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Monzo/API/Webhooks.html">Monzo::API::Webhooks</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Webhooks allow your application to receive real-time, push notification of
+events in an account.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/jaredsmithse/monzo.cr/blob/17a3b0a9bc805f1fe696ad792a136800af037f4c/src/monzo/api/webhooks.cr#L5" target="_blank">
+        monzo/api/webhooks.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#headers(*args,**options)-instance-method" class="signature"><strong>#headers</strong>(*args, **options)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#headers(*args,**options,&)-instance-method" class="signature"><strong>#headers</strong>(*args, **options, &)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#host(*args,**options)-instance-method" class="signature"><strong>#host</strong>(*args, **options)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#host(*args,**options,&)-instance-method" class="signature"><strong>#host</strong>(*args, **options, &)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#list(account_id)-instance-method" class="signature"><strong>#list</strong>(account_id)</a>
+        
+          <div class="summary"><p>List the webhooks your application has registered on an account.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#register!(account_id,url)-instance-method" class="signature"><strong>#register!</strong>(account_id, url)</a>
+        
+          <div class="summary"><p>Each time a matching event occurs, we will make a POST call to the <em>url</em> you provide with the <em>account_id</em>.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/jaredsmithse/monzo.cr/blob/17a3b0a9bc805f1fe696ad792a136800af037f4c/src/monzo/api/webhooks.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="headers(*args,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>headers</strong>(*args, **options)
+
+        <a class="method-permalink" href="#headers(*args,**options)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/jaredsmithse/monzo.cr/blob/17a3b0a9bc805f1fe696ad792a136800af037f4c/src/monzo/api/webhooks.cr#L6" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="headers(*args,**options,&)-instance-method">
+      <div class="signature">
+        
+        def <strong>headers</strong>(*args, **options, &)
+
+        <a class="method-permalink" href="#headers(*args,**options,&)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/jaredsmithse/monzo.cr/blob/17a3b0a9bc805f1fe696ad792a136800af037f4c/src/monzo/api/webhooks.cr#L6" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="host(*args,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>host</strong>(*args, **options)
+
+        <a class="method-permalink" href="#host(*args,**options)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/jaredsmithse/monzo.cr/blob/17a3b0a9bc805f1fe696ad792a136800af037f4c/src/monzo/api/webhooks.cr#L6" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="host(*args,**options,&)-instance-method">
+      <div class="signature">
+        
+        def <strong>host</strong>(*args, **options, &)
+
+        <a class="method-permalink" href="#host(*args,**options,&)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/jaredsmithse/monzo.cr/blob/17a3b0a9bc805f1fe696ad792a136800af037f4c/src/monzo/api/webhooks.cr#L6" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="list(account_id)-instance-method">
+      <div class="signature">
+        
+        def <strong>list</strong>(account_id)
+
+        <a class="method-permalink" href="#list(account_id)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>List the webhooks your application has registered on an account.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/jaredsmithse/monzo.cr/blob/17a3b0a9bc805f1fe696ad792a136800af037f4c/src/monzo/api/webhooks.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="register!(account_id,url)-instance-method">
+      <div class="signature">
+        
+        def <strong>register!</strong>(account_id, url)
+
+        <a class="method-permalink" href="#register!(account_id,url)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Each time a matching event occurs, we will make a POST call to the <em>url</em>
+you provide with the <em>account_id</em>. If the call fails, we will retry up
+to a maximum of 5 attempts, with exponential backoff.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/jaredsmithse/monzo.cr/blob/17a3b0a9bc805f1fe696ad792a136800af037f4c/src/monzo/api/webhooks.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
